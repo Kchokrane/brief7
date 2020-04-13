@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+div .nav {
+  margin: 0 auto;
+  left: 50%;
+  padding: 5% 3%;
+  text-align: center;
+  background-color: transparent;
+}
+
+@media (min-width: 320px) and (max-width: 1900px) {
+  div .nav {
+    margin-left: 300px;
+  }
+}
+
+div .nav a {
+  color: #fff;
+  text-decoration: none;
+  font: 20px Raleway;
+  margin: 0 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+div.pullUpDown a:before {
+  top: 0;
+}
+
+div.pullUpDown a:after {
+  bottom: 0;
+}
+
+div.content {
+  position: absolute;
+  left: 2%;
+  width: 250px;
+  height: 120px;
+  text-align: center;
+  background-color: transparent;
+}
+
+@media (min-width: 320px) and (max-width: 1900px) {
+  div.content {
+    top: 2px;
+  }
+}
+
+div.content a {
+  color: #fff;
+  text-decoration: none;
+  font: 50px none;
+  position: center;
+  z-index: 0;
+  cursor: pointer;
+}
+
+div.pullUpDown a:after,
+div.pullUpDown a:before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  content: '';
+  background: #fff;
+  opacity: .3;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+div.pullUpDown a:hover:after,
+div.pullUpDown a:hover:before {
+  height: 70%;
+}
+
+#carousel {
+  display: list-item;
+}
+
+.slider-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 20px;
+  height: 700px;
+}
+
+button {
+  padding: 8px 14px;
+  background: rgba(126, 3, 3, 0.582);
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  top: 60%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 1900px) {
+  button {
+    top: 450px;
+  }
+}
+
+.next {
+  margin-left: 93%;
+}
+
+.prev {
+  margin-left: 60px;
+}
+
+footer .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 2px solid #fff;
+}
+
+footer .row2 .colon2 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  height: 200px;
+  text-align: center;
+}
+
+footer .row2 h3 {
+  color: #700404;
+  margin-bottom: 8px;
+}
+
+footer .row2 ul {
+  list-style: none;
+  font-weight: bold;
+  margin-top: 35px;
+}
+
+footer .row2 ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .row2 ul li a:hover {
+  color: #700404;
+  padding: 10px 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery-home {
+  margin-top: 60px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.gallery-home img:hover {
+  opacity: 0.7;
+}
+
+.gallery-home #sect1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery-home #sect1 .photo-G1 {
+  width: 50%;
+  height: 500px;
+}
+
+.gallery-home #sect1 .photo-G1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-home #sect1 .photo-P1 {
+  width: 50%;
+  height: 500px;
+}
+
+.gallery-home #sect1 .photo-P1 img {
+  width: 100%;
+  height: 250px;
+}
+
+.gallery-home .photo-P2 img {
+  width: 100%;
+}
+
+.marque-home {
+  text-align: center;
+  margin: 80px;
+}
+/*# sourceMappingURL=style.css.map */

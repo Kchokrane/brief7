@@ -1,0 +1,29 @@
+[
+   {
+      "id": 1,
+      "prenom": "AYOUB",
+      "nom": "AHMED",
+      "password": "hala",
+      "telephone": "00000",
+      "email": "AYOUB.ELBOUINANY99@GMAIL.FR",
+      "message": "WELCOME"
+   },
+   {
+      "id": 2,
+      "prenom": "IMANE",
+      "nom": "MONAL",
+      "password": "aaaaa",
+      "telephone": "09090000",
+      "email": "TIVAY63453@4XMAIL.NET",
+      "message": "YOUR WELCOME"
+   },
+   {
+      "id": 3,
+      "prenom": "KAMAL",
+      "nom": "CHOKRANE",
+      "password": "Kamal1103",
+      "email": "KCHOKRANE@GMAIL.COM",
+      "telephone": "0123456789",
+      "message": "JE SUIS SATISFAIT"
+   }
+]

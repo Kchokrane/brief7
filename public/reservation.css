@@ -1,0 +1,391 @@
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+  background-color: black;
+  background-color: #171717;
+  color: white;
+  line-height: 20px;
+}
+
+#container {
+  position: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+div.nav {
+  margin: 0 auto;
+  left: 50%;
+  padding: 5% 3%;
+  text-align: center;
+  background-color: transparent;
+}
+
+.reservation_background {
+  width: 100%;
+  height: 300px;
+  background-image: url("img/reserv.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.reservation_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.reservation_input_form {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(5, 5, 5, 0.6);
+  -webkit-box-shadow: 1.6px 1.6px 3px rgba(20, 20, 20, 0.6);
+          box-shadow: 1.6px 1.6px 3px rgba(20, 20, 20, 0.6);
+  margin: 0 0 5% 0;
+}
+
+.reservation_input_form select {
+  margin-top: 10px;
+}
+
+h1 {
+  display: none;
+}
+
+main h2 {
+  text-align: center;
+  line-height: 30px;
+}
+
+.reservation-section1, .skyline {
+  display: none;
+}
+
+.reservation-section2 {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(33, 33, 33, 0.6);
+  padding: 50px 0;
+}
+
+.reservation-div-voiture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(5, 5, 5, 0.6);
+  -webkit-box-shadow: 1.6px 1.6px 3px rgba(20, 20, 20, 0.6);
+          box-shadow: 1.6px 1.6px 3px rgba(20, 20, 20, 0.6);
+  width: 350px;
+  margin: 25px;
+}
+
+.reservation-description {
+  padding: 15px;
+}
+
+.reservation-description p {
+  line-height: 28px;
+  margin-top: 30px;
+}
+
+.reservation-description h3 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.reservation-image-sportive {
+  background: url(img/lamborghini_pirelli.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+}
+
+.reservation-image-berline {
+  background: url(img/mercedes_class_c.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+}
+
+.reservation-image-suv {
+  background: url(img/range_rover.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+}
+
+.reservation-image-cabriolet {
+  background: url(img/mercedes-sl-500.png);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+}
+
+.reservation-section-bouton {
+  padding: 10px 15px;
+  background-color: #0B5351;
+  border-radius: 0;
+  color: white;
+  border: none;
+  position: relative;
+  top: 0%;
+  border-radius: 3px;
+}
+
+.reservation-section-bouton:hover {
+  background-color: #092327;
+}
+
+.reservation-details {
+  color: #000;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.asterisk-red {
+  color: #ad3434;
+  font-weight: bold;
+}
+
+.input-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 85%;
+  margin: 1em auto;
+}
+
+.input-contacts__input {
+  background-color: #212121;
+  background-color: rgba(0, 0, 0, 0.09);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 4px;
+  color: #000;
+  padding-left: .5em;
+  outline-color: silver;
+  resize: none;
+}
+
+.input-contacts__input {
+  height: 3em;
+}
+
+.input-contacts__title {
+  color: #000;
+  font-size: 12px;
+}
+
+.btn-submit {
+  background-color: #0b5351;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-size: 1.2em;
+  height: 3em;
+  max-width: 15em;
+  width: 85%;
+  cursor: pointer;
+}
+
+.btn-submit:focus {
+  outline-color: #bef;
+}
+
+.btn-submit:hover,
+.btn-submit:active {
+  color: #0b5351;
+  border: 2px solid #0b5351;
+  background-color: transparent;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 595px) {
+  h3 {
+    font-weight: bold;
+    font-size: 120%;
+    margin: 5% 0px;
+  }
+}
+/*# sourceMappingURL=reservation.css.map */

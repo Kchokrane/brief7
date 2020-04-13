@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>agence de voitures</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" async></script>
+  <link rel="stylesheet" href="inscription.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+
+
+
+  <div id="container">
+    <div class="nav pullUpDown">
+      <a href="/galerie">GALERIE</a>
+      <a href="/inscription">INSCRIPTION</a>
+      <a href="reservation">RESERVATION</a>
+    </div>
+
+    <div class="content pullUpDown">
+      <a>TRIP <br> CARS</a>
+    </div>
+  </div>
+  <main class="main-contacts">
+    <h1 class="main-contacts__title text-uppercase text-align--center">Nous contacter</h1>
+    <div>
+      <div>
+
+        <section class="section-contacts">
+          <p>Vous souhaitez en savoir plus sur LOCATION, nous faire part de vos remarques, effectuez ou gérez une
+            réservation ou bien encore vous renseigner pour venir dans nos agences : cet espace est le vôtre !</p>
+          <article class="section-contacts__article">
+            <h2 class="text-align--center">Contacter LOCATION directement</h2>
+            <p class="text-justify">Contactez-nous par téléphone au 0 819 760 800 (0,25€ TTC/min), par email à l'adresse
+              suivante service-clientele@location.fr, ou par courrier au 92 rue de l'Etoile 75015 Paris.</p>
+            <a class="anchor-contacts text-align--center" href="#form">Accédez au formulaire de contact</a>
+          </article>
+
+          <article class="section-contacts__article">
+            <h2 class="text-align--center">Besoin d'aide pour votre réservation ?</h2>
+            <p class="text-justify">Consultez notre rubrique aide à la location ainsi que nos rubriques Guides et
+              dossiers pour trouver les réponses aux questions que vous vous posez.</p>
+          </article>
+
+          <article class="section-contacts__article">
+            <h2 class="text-align--center">Les agences de location LOCATION</h2>
+            <p class="text-justify">Retrouvez les horaires et informations d'accès de nos 300 agences de location
+              situées partout en France, dans les Dom Tom.</p>
+          </article>
+
+          <article class="section-contacts__article">
+            <h2 class="text-align--center">LOCATION sur les réseaux sociaux</h2>
+            <p class="text-justify">Tous nos bons plans, notre actualité et des avantages exclusifs... retrouvez
+              LOCATION sur Facebook et Twitter.</p>
+          </article>
+        </section>
+      </div>
+<!--  -->
+
+
+<!--  -->
+
+      <div class="wrapper-contacts" id="form">
+        <h2 class="text-align--center">INSCRIPTION </h2>
+        <form method="POST" action="/inscription">
+          <div class="input-contacts">
+            <label class="input-contacts__title">genre<span class="asterisk-red">*</span>:</label>
+            <select name="select" id="genre" required>
+              <option selected disabled>...</option>
+              <option value="Madame">Madame</option>
+              <option value="Monsieur">Monsieur</option>
+            </select>
+          </div>
+          <div class="input-contacts">
+            <label class="input-contacts__title">Prénom<span class="asterisk-red">*</span>:</label>
+            <input class="uppercased input-contacts__input" id="prenom" name="prenom" required type="text">
+          </div>
+
+          <div class="input-contacts">
+            <label class="input-contacts__title">Nom<span class="asterisk-red">*</span>:</label>
+            <input class="uppercased input-contacts__input" id="nom" name="nom" required type="text">
+          </div>
+
+          <div class="input-contacts">
+            <label class="input-contacts__title">mot de passe<span class="asterisk-red">*</span>:</label>
+            <input class="input-contacts__input" id="pass" name="password" type="password">
+          </div>
+
+          <div class="input-contacts">
+            <label class="input-contacts__title">confirmation<span class="asterisk-red">*</span>:</label>
+            <input class="input-contacts__input" id="passConf" type="password">
+          </div>
+
+          <div class="input-contacts">
+            <label class="input-contacts__title">E-Mail<span class="asterisk-red">*</span>:</label>
+            <input class="uppercased input-contacts__input" id="email" name="email" required type="email">
+          </div>
+
+          <div class="input-contacts">
+            <label class="input-contacts__title">Téléphone<span class="asterisk-red">*</span>:</label>
+            <input class="input-contacts__input" id="telephone" name="telephone" required type="tel">
+          </div>
+
+          <div class="input-contacts">
+            <label class="input-contacts__title">Message<span class="asterisk-red">*</span>:</label>
+            <textarea class="uppercased input-contacts__textarea" id="message" name="message" required rows="8"></textarea>
+          </div>
+          <div class="input-contacts">
+         <button class="btn" id="submit-inscription" >Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="row2">
+      <div class="colon2">
+        <ul>
+          <h3>TRIPCARS.MA</h3>
+          <li><a href="#">Contacter</a></li>
+          <li><a href="#">Conditions générales de location</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Assistance Hertz Maroc</a></li>
+        </ul>
+      </div>
+      <div class="colon2">
+        <ul>
+          <h3>LUXE CARS</h3>
+          <li><a href="#">Découvrir le Maroc</a></li>
+          <li><a href="#">Recrutement</a></li>
+          <li><a href="#">Qui sommes nous</a></li>
+          <li><a href="#">Rent Business</a></li>
+          <li><a href="#">Nos agences de location</a></li>
+          <li><a href="#">Nos promos</a></li>
+        </ul>
+      </div>
+      <div class="colon2">
+        <ul>
+          <h3>OFFERS ET PRODUITS</h3>
+          <li><a href="#">Véhicules en location</a></li>
+          <li><a href="#">Véhicules d'Occasion</a></li>
+        </ul>
+      </div>
+      <div class="colon2">
+        <ul>
+          <h3>NOS PARTENAIRES</h3>
+          <li><a href="#">mercedes</a></li>
+          <li><a href="#">Audi</a></li>
+          <li><a href="#">lambrguini</a></li>
+        </ul>
+        <a href="#" class="fa fa-facebook-square"></a>
+        <a href="#" class="fa fa-twitter-square"></a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

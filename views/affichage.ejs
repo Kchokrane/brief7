@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>agence de voitures</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table{
+      background-color: #e4d1d1;
+    width: 70%;
+    margin: 20px auto;
+    }
+    tr td{
+      border-bottom: 1px solid gray;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="container">
+  <div class="nav pullUpDown">
+    <a href="/galerie">GALERIE</a>
+    <a href="/inscription">INSCRIPTION</a>
+    <a href="/reservation">RESERVATION</a>
+  </div>
+
+  <div class="content pullUpDown">
+    <a href="/galerie">TRIP   <br> CARS</a>
+  </div>
+</div>
+
+<div id="slide">
+      <img src="img/cadillac1.jpg" class="slider-img">
+      <img src="img/concept1.jpg" class="slider-img">
+      <img src="img/R8 (1).jpg" class="slider-img">
+      <img src="img/R8J.jpg" class="slider-img">
+      <img src="img/R8E.jpg" class="slider-img">
+    </div>
+  <button class="prev" onclick=incrementerslider(-1)> < </button>
+  <button class="next" onclick=incrementerslider(1)> > </button>
+
+  
+
+  <section id="sections1">
+    <h1 class="h1s" style="color: white;text-align: center;"> List des Clients</h1>
+    <table class="table table-sm">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Reservation</th>
+            <th scope="col">voiture</th>
+            <th scope="col">Date Debut</th>
+            <th scope="col">Date Fin</th>
+            <th>Treatment</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+                  <%for(var l of list2){%>
+               <tr>
+                <td ><%=l.reservation%></td>
+                <td ><%=l.voiture%></td>
+                <td ><%=l.dateDebut%></td>
+                <td ><%=l.dateFin%></td>
+                <td id="dlinks" style="text-align: center;">
+                    <a href="/edit/<%= l.id %>"  class="btn links btn-success" style="background-color: green; padding: 10px; color: white">
+                        Edit
+                        </a>
+                   <a href="/delete/<%= l.id %>"   id="myBtn" style="background-color: red; padding: 10px; color: white" onclick="return confirm('are u sure ?')">
+                             Delete
+                        </a>
+                        <%}%>
+            </tbody>
+      </table>
+  </section>
+  <div class="input-contacts" style="text-align: center;">
+    <a href="/reservation" style="background: rgb(11, 83, 14);
+    color: white;
+     position: initial;
+     padding: 13px;
+     border: none;
+     border-radius: 0%; width: 20%;
+     margin: 3px auto;" class="btn" id="b2n">Ajouter</a>
+  </div>
+
+
+  <script src="script.js" async></script>
+  <!-- The Modal -->
+
+</body>
+
+</html>
